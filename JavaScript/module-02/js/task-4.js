@@ -1,9 +1,9 @@
-const checkStringLength = 40;
 const formatString = function (string) {
+  const checkStringLength = 40;
   if (string.length < checkStringLength) {
     return string;
   } else {
-    const newString = string.substring(0, 40) + "...";
+    const newString = string.substring(0, checkStringLength) + "...";
     return newString;
   }
 };

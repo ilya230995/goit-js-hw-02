@@ -5,15 +5,15 @@ const checkForSpam = function (message) {
       checkForSpamSplit.includes("spam") ||
       checkForSpamSplit.includes("sale")
     ) {
-      console.log("TRUE");
+      return true;
     } else {
-      console.log("FALSE");
+      return false;
     }
   }
 };
 
-checkForSpam("Latest technology news");
+// console.log(checkForSpam("Latest technology news"));
 
 //   console.log(checkForSpam('JavaScript weekly newsletter')); // false
 
-// console.log(checkForSpam('Get best sale offers now!'));
+console.log(checkForSpam('Get best sale offers now!'));
